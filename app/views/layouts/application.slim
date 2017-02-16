@@ -15,23 +15,11 @@ html
             span.icon-bar
             span.icon-bar
             span.icon-bar
-          a.navbar-brand href="#"  Project name
-        #navbar.collapse.navbar-collapse
-          ul.nav.navbar-nav
-            li.active
-              a href="#"  Home
-            li
-              a href="#about"  About
-            li
-              a href="#contact"  Contact
-        /! /.nav-collapse
+          = link_to "Virtualaula", root_path, class: 'navbar-brand'
+
     .container
       .starter-template
-        h1 Bootstrap starter template
-        p.lead
-          | Use this document as a way to quickly start any new project.
-          br/
-          | All you get is this text and a mostly barebones HTML document.
-      = yield
-    /! /.container
-    = yield
+        br
+        br
+        br
+        = yield
